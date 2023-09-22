@@ -14,6 +14,7 @@ public class Book {
 		this.writer = writer;
 		this.price = price;
 	}
+
 	
 	public void setTitle(String title) {
 		this.title = title;
