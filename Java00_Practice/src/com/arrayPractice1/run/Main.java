@@ -11,16 +11,19 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		as.test1();
-		System.out.println();
-		
-		as.test2();
-		System.out.println();
-	
-		as.test3();
-		System.out.println();
-		
-		as.test4();
+//		as.test1();
+//		System.out.println();
+//		
+//		as.test2();
+//		System.out.println();
+//	
+//		as.test3();
+//		System.out.println();
+//		
+//		as.test4();
+//		System.out.println();
+//		
+		as.test5();
 	}
 
 }
