@@ -2,7 +2,9 @@ package com.collection.silsub3.view;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 import com.collection.silsub3.controller.BookManager;
@@ -47,18 +49,13 @@ public class BookMenu {
 					System.out.println("삭제할 글이 존재하지 않음");
 				break;
 			case 4:
-				int result = bm.searchBook(inputBookTitle());
-				System.out.println(bm.selectBook(result));
+				System.out.println(bm.selectBook(bm.searchBook(inputBookTitle())));
 				break;
 			case 5:
-				ArrayList<Book> list = bm.selectAll();
-				if(list.isEmpty()) {
-					System.out.println("도서가 없습니다.");
-				}else {
-					Iterator<Book> it = list.iterator();
-					while(it.hasNext()) {
-						System.out.println(it.next());
-					}
+				HashMap<String, Book> list = bm.selectAll();
+				
+				for(Entry<String, Book> entry : list.entrySet()) {
+					System.out.println("key = " + entry.getKey() + entry.getValue().toString());
 				}
 				break;
 			case 6: 

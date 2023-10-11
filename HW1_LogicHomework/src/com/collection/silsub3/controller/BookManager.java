@@ -29,15 +29,15 @@ public class BookManager {
 	}
 	
 	public String searchBook(String title) {
-		return null;
+		return bd.searchBook(title);
 	}
 	
 	public Book selectBook(String key) {
-		return null;
+		return bd.selectBook(key);
 	}
 	
 	public HashMap<String, Book> selectAll(){
-		return null;
+		return bd.selectAll();
 	}
 	
 	public Book[] sortedBookList() {
